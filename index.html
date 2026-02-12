@@ -12,6 +12,8 @@
     integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="style.css">
+  <!-- for cally calendar -->
+  <script type="module" src="https://unpkg.com/cally"></script>
 
 </head>
 
@@ -20,12 +22,15 @@
   <!-- navbar -->
   <div class="navbar bg-base-100 shadow-sm">
     <div class="flex-1">
-      <a class="btn btn-ghost text-xl text-primary" href="index.html">PREM Digital</a>
+      <a class="btn btn-ghost text-xl text-primary hover:text-white hover:bg-pink-500 transition duration-200"
+        href="index.html">
+        PREM Digital
+      </a>
     </div>
 
     <!-- Menu -->
     <div class="flex gap-2">
-      <ul class="menu bg-base-200 lg:menu-horizontal rounded-box">
+      <ul class="menu bg-base-200 lg:menu-horizontal rounded-box bg-white">
         <li>
           <a>
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
@@ -87,16 +92,16 @@
   <!-- Carousel with indicator -->
   <div class="carousel w-full">
     <div id="item1" class="carousel-item w-full">
-      <img src="https://img.daisyui.com/images/stock/photo-1625726411847-8cbb60cc71e6.webp" class="w-full" />
+      <img src="/images/banner1.jpg" class="w-full" />
     </div>
     <div id="item2" class="carousel-item w-full">
-      <img src="https://img.daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.webp" class="w-full" />
+      <img src="/images/banner2.jpg" class="w-full" />
     </div>
     <div id="item3" class="carousel-item w-full">
-      <img src="https://img.daisyui.com/images/stock/photo-1414694762283-acccc27bca85.webp" class="w-full" />
+      <img src="/images/banner3.jpg" class="w-full" />
     </div>
     <div id="item4" class="carousel-item w-full">
-      <img src="https://img.daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.webp" class="w-full" />
+      <img src="/images/banner4.jpg" class="w-full" />
     </div>
   </div>
   <div class="flex w-full justify-center gap-2 py-2">
@@ -474,6 +479,57 @@
     <button class="btn btn-success">Success</button>
     <button class="btn btn-warning">Warning</button>
     <button class="btn btn-error">Error</button>
+  </div>
+
+  <div class="container mx-auto mb-2">
+    <h2>Badges</h2>
+    <span class="badge badge-primary">Primary</span>
+    <span class="badge badge-secondary">Secondary</span>
+    <span class="badge badge-accent">Accent</span>
+    <span class="badge badge-info">Info</span>
+    <span class="badge badge-success">Success</span>
+    <span class="badge badge-warning">Warning</span>
+    <span class="badge badge-error">Error</span>
+  </div>
+
+  <!-- calendar -->
+
+  <div class="grid grid-cols-2 md:grid-cols-3 gap-4 container mx-auto">
+    <div class="container mx-auto">
+      <h2>Calendar</h2>
+      <calendar-date class="cally bg-base-100 border border-base-300 shadow-lg rounded-box">
+        <svg aria-label="Previous" class="fill-current size-4" slot="previous" xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24">
+          <path fill="currentColor" d="M15.75 19.5 8.25 12l7.5-7.5"></path>
+        </svg>
+        <svg aria-label="Next" class="fill-current size-4" slot="next" xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24">
+          <path fill="currentColor" d="m8.25 4.5 7.5 7.5-7.5 7.5"></path>
+        </svg>
+        <calendar-month></calendar-month>
+      </calendar-date>
+    </div>
+    <!-- col2 -->
+    <div class="container mx-auto">
+      <h2>Calendar pick date</h2>
+      <button popovertarget="cally-popover1" class="input input-border" id="cally1" style="anchor-name:--cally1">
+        Pick a date
+      </button>
+      <div popover id="cally-popover1" class="dropdown bg-base-100 rounded-box shadow-lg"
+        style="position-anchor:--cally1">
+        <calendar-date class="cally" onchange={document.getElementById}>
+          <svg aria-label="Previous" class="fill-current size-4" slot="previous" xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24">
+            <path d="M15.75 19.5 8.25 12l7.5-7.5"></path>
+          </svg>
+          <svg aria-label="Next" class="fill-current size-4" slot="next" xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24">
+            <path d="m8.25 4.5 7.5 7.5-7.5 7.5"></path>
+          </svg>
+          <calendar-month></calendar-month>
+        </calendar-date>
+      </div>
+    </div>
   </div>
 
   <!-- Footer -->
