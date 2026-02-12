@@ -15,6 +15,7 @@
   <!-- for cally calendar -->
   <script type="module" src="https://unpkg.com/cally"></script>
 
+
 </head>
 
 <body>
@@ -89,43 +90,56 @@
     </div>
   </div>
 
-  <!-- Carousel with indicator -->
-  <div class="carousel w-full">
-    <div id="item1" class="carousel-item w-full">
-      <img src="/images/banner1.jpg" class="w-full" />
-    </div>
-    <div id="item2" class="carousel-item w-full">
-      <img src="/images/banner2.jpg" class="w-full" />
-    </div>
-    <div id="item3" class="carousel-item w-full">
-      <img src="/images/banner3.jpg" class="w-full" />
-    </div>
-    <div id="item4" class="carousel-item w-full">
-      <img src="/images/banner4.jpg" class="w-full" />
-    </div>
-  </div>
-  <div class="flex w-full justify-center gap-2 py-2">
-    <a href="#item1" class="btn btn-xs">1</a>
-    <a href="#item2" class="btn btn-xs">2</a>
-    <a href="#item3" class="btn btn-xs">3</a>
-    <a href="#item4" class="btn btn-xs">4</a>
-  </div>
-
   <!-- Hero -->
-  <div class="container mx-auto hero bg-base-200 min-h-screen">
-    <div class="hero-content flex-col lg:flex-row-reverse">
-      <img src="https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp"
-        class="max-w-sm rounded-lg shadow-2xl" />
-      <div>
-        <h1 class="text-5xl font-bold">Box Office News!</h1>
-        <p class="py-6">
-          Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
-          quasi. In deleniti eaque aut repudiandae et a id nisi.
+  <div class="hero min-h-screen"
+    style="background-image: url(https://img.daisyui.com/images/stock/photo-1507358522600-9f71e620c44e.webp);">
+    <div class="hero-overlay"></div>
+    <div class="hero-content text-neutral-content text-center">
+      <div class="max-w-md">
+        <h1 class="mb-5 text-4xl font-bold">Welcome to PREM Digital</h1>
+        <p class="mb-5">
+          จุดเริ่มต้นของการเปลี่ยนแปลงครั้งยิ่งใหญ่ร่วมเดินทางไปกับเราในการสร้างสรรค์โลกดิจิทัลที่ไม่เหมือนใคร
+          ด้วยทีมงานมืออาชีพที่พร้อมเปลี่ยนความฝันของคุณให้เป็นจริงและนำธุรกิจของคุณไปสู่ความสำเร็จอย่างยั่งยืน
         </p>
-        <a class="btn btn-primary" href="stat.html">Get Started</a>
+        <a class="btn btn-primary" href="product.html">Get Started</a>
       </div>
     </div>
   </div>
+
+  <!-- Carousel with indicator -->
+  <div class="carousel w-full">
+    <div id="slide1" class="carousel-item relative w-full">
+      <img src="images/banner1.jpg" class="w-full" />
+      <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+        <a href="#slide4" class="btn btn-circle">❮</a>
+        <a href="#slide2" class="btn btn-circle">❯</a>
+      </div>
+    </div>
+    <div id="slide2" class="carousel-item relative w-full">
+      <img src="images/banner2.jpg" class="w-full" />
+      <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+        <a href="#slide1" class="btn btn-circle">❮</a>
+        <a href="#slide3" class="btn btn-circle">❯</a>
+      </div>
+    </div>
+    <div id="slide3" class="carousel-item relative w-full">
+      <img src="images/banner3.jpg" class="w-full" />
+      <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+        <a href="#slide2" class="btn btn-circle">❮</a>
+        <a href="#slide4" class="btn btn-circle">❯</a>
+      </div>
+    </div>
+    <div id="slide4" class="carousel-item relative w-full">
+      <img src="images/banner4.jpg" class="w-full" />
+      <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+        <a href="#slide3" class="btn btn-circle">❮</a>
+        <a href="#slide1" class="btn btn-circle">❯</a>
+      </div>
+    </div>
+  </div>
+
+
+
 
 
   <!-- content -->
