@@ -20,7 +20,7 @@
   <!-- navbar -->
   <div class="navbar bg-base-100 shadow-sm">
     <div class="flex-1">
-      <a class="btn btn-ghost text-xl">PREM Digital</a>
+      <a class="btn btn-ghost text-xl text-primary" href="index.html">PREM Digital</a>
     </div>
     <div class="flex gap-2">
       <input type="text" placeholder="Search" class="input input-bordered w-24 md:w-auto" />
@@ -67,6 +67,22 @@
     <a href="#item2" class="btn btn-xs">2</a>
     <a href="#item3" class="btn btn-xs">3</a>
     <a href="#item4" class="btn btn-xs">4</a>
+  </div>
+
+  <!-- Hero -->
+  <div class="container mx-auto hero bg-base-200 min-h-screen">
+    <div class="hero-content flex-col lg:flex-row-reverse">
+      <img src="https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp"
+        class="max-w-sm rounded-lg shadow-2xl" />
+      <div>
+        <h1 class="text-5xl font-bold">Box Office News!</h1>
+        <p class="py-6">
+          Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
+          quasi. In deleniti eaque aut repudiandae et a id nisi.
+        </p>
+        <button class="btn btn-primary">Get Started</button>
+      </div>
+    </div>
   </div>
 
 
@@ -168,10 +184,11 @@
 
   <!-- add button -->
   <div class="overflow-x-auto container mx-auto px-4 my-8 flex justify-end">
-    <button class="btn btn-success text-white hover:bg-pink-500 hover:text-success">
+    <a href="form.html" target="_blank"
+      class="btn btn-success text-white hover:bg-pink-500 hover:text-white hover:border-white">
       <i class="fas fa-plus-circle text-xl"></i>
       Add Data
-    </button>
+    </a>
   </div>
 
   <div class="overflow-x-auto container mx-auto px-4 my-8">
@@ -218,7 +235,7 @@
             <br />
             <span class="badge badge-ghost badge-sm">Desktop Support Technician</span>
           </td>
-          <td>Purple</td>
+          <td><span class="badge badge-outline badge-accent">Purple</span></td>
           <th>
             <button class="btn btn-info btn-sm "><i class="far fa-eye"></i></button>
             <button class="btn btn-warning btn-sm "><i class="far fa-edit"></i></button>
