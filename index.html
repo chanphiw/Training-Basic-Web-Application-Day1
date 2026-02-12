@@ -389,7 +389,39 @@
 
   </div>
 
+  <!-- toggle -->
+  <div class="container mx-auto mb-5">
+    <input type="checkbox" checked="checked" class="toggle toggle-primary" />
+    <input type="checkbox" checked="checked" class="toggle toggle-secondary" />
+    <input type="checkbox" checked="checked" class="toggle toggle-accent" />
+    <input type="checkbox" checked="checked" class="toggle toggle-neutral" />
 
+    <input type="checkbox" checked="checked" class="toggle toggle-info" />
+    <input type="checkbox" checked="checked" class="toggle toggle-success" />
+    <input type="checkbox" checked="checked" class="toggle toggle-warning" />
+    <input type="checkbox" checked="checked" class="toggle toggle-error" />
+  </div>
+
+  <!-- select -->
+  <div class="grid grid-cols-2 md:grid-cols-4 gap-4 container mx-auto">
+    <div class="container mx-auto mb-5 d-flex">
+      <select class="select">
+        <option disabled selected>Pick a color</option>
+        <option>Crimson</option>
+        <option>Amber</option>
+        <option>Velvet</option>
+      </select>
+    </div>
+
+    <div class="container mx-auto mb-5">
+      <select class="select select-secondary">
+        <option disabled selected>Pick a language</option>
+        <option>Zig</option>
+        <option>Go</option>
+        <option>Rust</option>
+      </select>
+    </div>
+  </div>
 
   <!-- Footer -->
   <footer class="mx-auto justify-between footer sm:footer-horizontal bg-neutral text-neutral-content p-10">
