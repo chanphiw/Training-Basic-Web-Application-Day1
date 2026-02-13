@@ -141,7 +141,6 @@
 
 
 
-
   <!-- content -->
 
   <!-- ใช้ container จาก DaisyUI หรือ max-width -->
@@ -544,6 +543,192 @@
         </calendar-date>
       </div>
     </div>
+  </div>
+
+
+  <!-- video -->
+  <!-- Video Grid -->
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+    <!-- Video 1: เทคนิคการกิน -->
+    <div
+      class="group relative bg-white/90 backdrop-blur-md rounded-2xl overflow-hidden border border-white/40 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-1">
+      <div
+        class="absolute inset-0 bg-gradient-to-br from-orange-100/40 via-transparent to-yellow-100/30 pointer-events-none rounded-2xl">
+      </div>
+      <div class="relative">
+        <!-- Thumbnail with play overlay -->
+        <div class="yt-thumb-wrap relative cursor-pointer"
+          onclick="var w=this.parentElement.querySelector('.yt-iframe-wrap');var f=w.querySelector('iframe');f.src=f.getAttribute('data-src');w.classList.remove('hidden');this.classList.add('hidden');">
+          <img src="https://img.youtube.com/vi/RPgXss2H7So/hqdefault.jpg" alt="เทคนิคการกิน"
+            class="w-full aspect-video object-cover" loading="lazy" />
+          <div
+            class="absolute inset-0 bg-black/30 flex items-center justify-center group-hover:bg-black/20 transition-colors">
+            <div
+              class="w-16 h-16 md:w-20 md:h-20 rounded-full bg-red-600/90 flex items-center justify-center shadow-2xl transform group-hover:scale-110 transition-transform">
+              <svg class="w-7 h-7 md:w-9 md:h-9 text-white ml-1" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M8 5v14l11-7z" />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <!-- Iframe (hidden until clicked) -->
+        <div class="yt-iframe-wrap hidden">
+          <div class="relative w-full" style="padding-top:56.25%;">
+            <iframe class="absolute inset-0 w-full h-full" data-src="https://www.youtube.com/embed/RPgXss2H7So?rel=0"
+              title="เทคนิคการกิน" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen>
+            </iframe>
+          </div>
+        </div>
+      </div>
+      <!-- Info -->
+      <div class="p-4">
+        <div class="flex items-center gap-2 mb-2">
+          <span
+            class="px-2.5 py-0.5 rounded-full bg-gradient-to-r from-orange-400 to-amber-400 text-white text-xs font-bold shadow">🍽️
+            Nutrition</span>
+        </div>
+        <h4 class="font-bold text-gray-900 text-base md:text-lg leading-snug">เทคนิคการกิน</h4>
+        <p class="text-gray-600 text-sm mt-1">เรียนรู้เทคนิคการกินอย่างถูกวิธี เพื่อสุขภาพที่ดีในระยะยาว</p>
+      </div>
+    </div>
+
+    <!-- Video 2: การนอนที่ดี -->
+    <div
+      class="group relative bg-white/90 backdrop-blur-md rounded-2xl overflow-hidden border border-white/40 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-1">
+      <div
+        class="absolute inset-0 bg-gradient-to-br from-indigo-100/40 via-transparent to-purple-100/30 pointer-events-none rounded-2xl">
+      </div>
+      <div class="relative">
+        <!-- Thumbnail with play overlay -->
+        <div class="yt-thumb-wrap relative cursor-pointer"
+          onclick="var w=this.parentElement.querySelector('.yt-iframe-wrap');var f=w.querySelector('iframe');f.src=f.getAttribute('data-src');w.classList.remove('hidden');this.classList.add('hidden');">
+          <img src="https://img.youtube.com/vi/tuZeasaCiLE/hqdefault.jpg" alt="การนอนที่ดี"
+            class="w-full aspect-video object-cover" loading="lazy" />
+          <div
+            class="absolute inset-0 bg-black/30 flex items-center justify-center group-hover:bg-black/20 transition-colors">
+            <div
+              class="w-16 h-16 md:w-20 md:h-20 rounded-full bg-red-600/90 flex items-center justify-center shadow-2xl transform group-hover:scale-110 transition-transform">
+              <svg class="w-7 h-7 md:w-9 md:h-9 text-white ml-1" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M8 5v14l11-7z" />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <!-- Iframe (hidden until clicked) -->
+        <div class="yt-iframe-wrap hidden">
+          <div class="relative w-full" style="padding-top:56.25%;">
+            <iframe class="absolute inset-0 w-full h-full" data-src="https://www.youtube.com/embed/tuZeasaCiLE?rel=0"
+              title="การนอนที่ดี" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen>
+            </iframe>
+          </div>
+        </div>
+      </div>
+      <!-- Info -->
+      <div class="p-4">
+        <div class="flex items-center gap-2 mb-2">
+          <span
+            class="px-2.5 py-0.5 rounded-full bg-gradient-to-r from-blue-400 to-sky-500 text-white text-xs font-bold shadow">😴
+            Sleep</span>
+        </div>
+        <h4 class="font-bold text-gray-900 text-base md:text-lg leading-snug">การนอนที่ดี</h4>
+        <p class="text-gray-600 text-sm mt-1">เคล็ดลับการนอนหลับอย่างมีคุณภาพ เพื่อสุขภาพกายและใจที่สมบูรณ์</p>
+      </div>
+    </div>
+
+    <!-- Video 3: การออกกำลังกาย -->
+    <div
+      class="container mx-auto group relative bg-white/90 backdrop-blur-md rounded-2xl overflow-hidden border border-white/40 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-1">
+      <div
+        class="mt-5 absolute inset-0 bg-gradient-to-br from-green-100/40 via-transparent to-emerald-100/30 pointer-events-none rounded-2xl">
+      </div>
+      <div class="relative">
+        <!-- Thumbnail with play overlay -->
+        <div class="yt-thumb-wrap relative cursor-pointer"
+          onclick="var w=this.parentElement.querySelector('.yt-iframe-wrap');var f=w.querySelector('iframe');f.src=f.getAttribute('data-src');w.classList.remove('hidden');this.classList.add('hidden');">
+          <img src="https://img.youtube.com/vi/1qqrsLrkM_k/hqdefault.jpg" alt="การออกกำลังกาย"
+            class="w-full aspect-video object-cover" loading="lazy" />
+          <div
+            class="absolute inset-0 bg-black/30 flex items-center justify-center group-hover:bg-black/20 transition-colors">
+            <div
+              class="w-16 h-16 md:w-20 md:h-20 rounded-full bg-red-600/90 flex items-center justify-center shadow-2xl transform group-hover:scale-110 transition-transform">
+              <svg class="w-7 h-7 md:w-9 md:h-9 text-white ml-1" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M8 5v14l11-7z" />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <!-- Iframe (hidden until clicked) -->
+        <div class="yt-iframe-wrap hidden">
+          <div class="relative w-full" style="padding-top:56.25%;">
+            <iframe class="absolute inset-0 w-full h-full" data-src="https://www.youtube.com/embed/1qqrsLrkM_k?rel=0"
+              title="การออกกำลังกาย" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen>
+            </iframe>
+          </div>
+        </div>
+      </div>
+      <!-- Info -->
+      <div class="p-4">
+        <div class="flex items-center gap-2 mb-2">
+          <span
+            class="px-2.5 py-0.5 rounded-full bg-gradient-to-r from-green-400 to-emerald-400 text-white text-xs font-bold shadow">🏃
+            Exercise</span>
+        </div>
+        <h4 class="font-bold text-gray-900 text-base md:text-lg leading-snug">การออกกำลังกาย</h4>
+        <p class="text-gray-600 text-sm mt-1">เทคนิคการออกกำลังกายที่ถูกต้อง เพื่อร่างกายแข็งแรงและสุขภาพดี</p>
+      </div>
+    </div>
+
+    <!-- Video 4: จิตใจแจ่มใส -->
+    <div
+      class="group relative bg-white/90 backdrop-blur-md rounded-2xl overflow-hidden border border-white/40 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-1">
+      <div
+        class="absolute inset-0 bg-gradient-to-br from-violet-100/40 via-transparent to-fuchsia-100/30 pointer-events-none rounded-2xl">
+      </div>
+      <div class="relative">
+        <!-- Thumbnail with play overlay -->
+        <div class="yt-thumb-wrap relative cursor-pointer"
+          onclick="var w=this.parentElement.querySelector('.yt-iframe-wrap');var f=w.querySelector('iframe');f.src=f.getAttribute('data-src');w.classList.remove('hidden');this.classList.add('hidden');">
+          <img src="https://img.youtube.com/vi/PnHm02y0-LE/hqdefault.jpg" alt="จิตใจแจ่มใส"
+            class="w-full aspect-video object-cover" loading="lazy" />
+          <div
+            class="absolute inset-0 bg-black/30 flex items-center justify-center group-hover:bg-black/20 transition-colors">
+            <div
+              class="w-16 h-16 md:w-20 md:h-20 rounded-full bg-red-600/90 flex items-center justify-center shadow-2xl transform group-hover:scale-110 transition-transform">
+              <svg class="w-7 h-7 md:w-9 md:h-9 text-white ml-1" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M8 5v14l11-7z" />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <!-- Iframe (hidden until clicked) -->
+        <div class="yt-iframe-wrap hidden">
+          <div class="relative w-full" style="padding-top:56.25%;">
+            <iframe class="absolute inset-0 w-full h-full" data-src="https://www.youtube.com/embed/PnHm02y0-LE?rel=0"
+              title="จิตใจแจ่มใส" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen>
+            </iframe>
+          </div>
+        </div>
+      </div>
+      <!-- Info -->
+      <div class="p-4">
+        <div class="flex items-center gap-2 mb-2">
+          <span
+            class="px-2.5 py-0.5 rounded-full bg-gradient-to-r from-violet-400 to-fuchsia-400 text-white text-xs font-bold shadow">🧘
+            Mindfulness</span>
+        </div>
+        <h4 class="font-bold text-gray-900 text-base md:text-lg leading-snug">จิตใจแจ่มใส</h4>
+        <p class="text-gray-600 text-sm mt-1">ดูแลสุขภาพจิต ผ่อนคลายความเครียด เพื่อจิตใจที่สดใสทุกวัน</p>
+      </div>
+    </div>
+
   </div>
 
   <!-- Footer -->
