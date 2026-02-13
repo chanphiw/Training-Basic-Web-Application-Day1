@@ -18,8 +18,6 @@
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
 
-
-
 </head>
 
 <body>
@@ -36,7 +34,7 @@
     <div class="flex gap-2">
       <ul class="menu bg-base-200 lg:menu-horizontal rounded-box bg-white">
         <li>
-          <a>
+          <a href="index.html">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
               stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -151,6 +149,11 @@
   <!-- <div style="width: 80%; margin: 50px auto;">
     <canvas id="myChart3"></canvas>
   </div> -->
+
+  <!-- Chart4 : Pie Chart -->
+  <div style="width: 50%; margin: 50px auto;">
+    <canvas id="myPieChart"></canvas>
+  </div>
 
 
 
@@ -605,6 +608,42 @@
     });
   </script>
 
+
+  <!-- Pie Chart -->
+
+  <script>
+    const ctx4 = document.getElementById('myPieChart').getContext('2d')
+
+    const myPieChart = new Chart(ctx4, {
+      type: 'pie',
+      data: {
+        labels: ['สินค้า A', 'สินค้า B', 'สินค้า C', 'สินค้า D'],
+        datasets: [{
+          label: 'สัดส่วนยอดขาย',
+          data: [300, 50, 100, 80],
+          backgroundColor: [
+            'rgb(255, 99, 132)',
+            'rgb(54, 162, 235)',
+            'rgb(255, 205, 86)',
+            'rgb(75, 192, 192)'
+          ],
+          hoverOffset: 4
+        }]
+      },
+      options: {
+        responsive: true,
+        plugins: {
+          title: {
+            display: true,
+            text: 'สัดส่วนยอดขายตามประเภทสินค้า'
+          },
+          legend: {
+            position: 'bottom'
+          }
+        }
+      }
+    });
+  </script>
 
 
 
